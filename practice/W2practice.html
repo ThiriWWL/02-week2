@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+    <h1>
+      SheCodes
+      <script>
+        let lis = document.querySelectorAll("li");
+        let paragraphs = document.querySelectorAll("li#special p");
+        let li = document.querySelector("li");
+        let day = document.querySelector(".day");
+        let paragraph = document.querySelector("ul#list p");
+        function add(x, y) {
+          return x + y;
+        }
+        let result = add(3, 4);
+        let result2 = add(result, 0);
+
+        function getFullname(firstname, lastname) {
+          let fullname = firstname + " " + lastname;
+          return fullname;
+        }
+
+        let userFullname = getFullname("Kate", "Robinson");
+        alert(userFullname);
+        alert(getFullname("Julie, Smith"));
+
+        function fullname(firstname, lastname) {
+          alert(firstname + " " + lastname);
+        }
+
+        let firstname = prompt("What is your first name?");
+        let lastname = prompt("What is your last name?");
+        fullname(firstname, lastname);
+
+        let lauguage = prompt("Waht lauguage do you speak?");
+        let continent = prompt("Which continent are you from?");
+
+        if (lauguage == "Spain" && continent == "Europe") {
+          let name = prompt("What is your name?");
+          alert("Hola  🇪🇸" + name);
+        } else if (lauguage == "French" && continent == "Europe") {
+          let name = prompt("What is your name?");
+          alert("Bonjour 🏴" + name);
+        } else {
+          alert("Hello 👋");
+        }
+        let age = prompt("How old are you?");
+
+        if (age >= 18) {
+          alert("You can apply it.");
+        } else {
+          alert("You are not old enough 😔");
+        }
+      </script>
+    </h1>
+  </body>
+</html>
